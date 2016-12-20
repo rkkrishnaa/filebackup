@@ -11,3 +11,6 @@ command_timeout=60
 connection_timeout=300
 include=/etc/nagios/nrpe_local.cfg
 include_dir=/etc/nagios/nrpe.d/
+#command[check_load]=/usr/lib/nagios/plugins/check_load -w $ARG1$ -c $ARG2$
+#command[check_disk]=/usr/lib/nagios/plugins/check_disk -w $ARG1$ -c $ARG2$ -p $ARG3$
+#command[check_procs]=/usr/lib/nagios/plugins/check_procs -w $ARG1$ -c $ARG2$ -s $ARG3$
